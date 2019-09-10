@@ -1,0 +1,74 @@
+/* Create two unequal columns that floats next to each other */
+.row-adopt {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+/* Left column */
+.leftcolumn h1 {
+  font-weight: lighter;
+}
+.adopt-column .card {
+  display: flex;
+  flex-direction: column;
+}
+.adopt-column h1 {
+  font-weight: lighter;
+}
+.adopt-column .type {
+  font-weight: 500;
+}
+
+/* Right column */
+.adopt-column .adopt-page-btn,
+.add-to-favs {
+  background-color: #519e8a;
+  color: #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  border: 0px;
+}
+.adopt-column .add-to-favs:hover .heart-icon {
+  color: purple;
+}
+.adopt-column .adopt-page-btn,
+.add-to-favs {
+  font-size: calc(12px + 2vmin);
+}
+
+.adopt-column .add-to-favs,
+.adopt-page-btn:hover {
+  cursor: pointer;
+}
+/* Fake image */
+.fakeimg {
+  width: 100%;
+}
+
+/* Add a card effect for articles */
+.row-adopt .card {
+  background-color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .row-adopt {
+    display: flex;
+    flex-direction: column;
+  }
+  .row-adopt .adopt-column .card {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}

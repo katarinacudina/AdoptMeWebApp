@@ -1,0 +1,134 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 50vw;
+  min-height: 400px;
+  max-height: 550px;
+  min-width: 300px;
+  color: #eee;
+}
+.header:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(27, 32, 48, 1) 100%
+  );
+}
+.header:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+  background: #1b2030
+    url(https://s1.1zoom.me/big0/822/Cats_Redhead_girl_Hair_Hug_Ginger_color_Little_567543_1280x930.jpg)
+    center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: grow 60s linear 10ms infinite;
+  transition: all 0.2s ease-in-out;
+  z-index: -2;
+}
+.header a {
+  color: #eee;
+}
+.info h1 {
+  color: white;
+  font-weight: 20px;
+  font-size: calc(50px + 2vmin);
+  font-weight: lighter;
+}
+.menu {
+  display: block;
+  width: 40px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-decoration: none;
+}
+.menu:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  margin: 0 auto;
+  top: 5px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 8px, 0 16px;
+}
+.sides,
+.info {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.info {
+  width: 100%;
+  padding: 15% 10% 0 10%;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.adopt-btn {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  margin-bottom: 3px;
+  padding: 6px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  font-size: calc(20px + 2vmin);
+}
+.adopt-btn:hover {
+  font-size: calc(23px + 2vmin);
+}
+.info h4,
+.meta {
+  font-size: calc(10px + 2vmin);
+}
+.meta {
+  font-style: normal;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.btn {
+  color: #333;
+  border: 2px solid;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .header .info h1 {
+    font-size: calc(30px + 2vmin);
+  }
+}

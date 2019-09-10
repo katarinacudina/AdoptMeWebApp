@@ -1,0 +1,114 @@
+/* Colors */
+/*
+dark blue: #476A6F
+light blue: #258EA6
+dark green: #519E8A
+medium green: #7EB09B
+light green: #A3C4BC
+*/
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./bg.jpg");
+}
+
+.wrapper .form-wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.wrapper form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper h1 {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-weight: lighter;
+}
+
+.wrapper label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+.wrapper input {
+  padding: 10px 10px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+.wrapper input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+.wrapper input.error {
+  border: 1px solid red;
+}
+
+.wrapper .errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.wrapper .username,
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.wrapper .username,
+.password {
+  width: 100%;
+}
+
+.wrapper .createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .createAccount button {
+  background-color: #519e8a;
+  color: #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  border: 0px;
+}
+
+.createAccount button:hover {
+  cursor: pointer;
+}
+
+.createAccount small {
+  color: black;
+  font-weight: lighter;
+}
+link {
+  font-weight: lighter;
+}

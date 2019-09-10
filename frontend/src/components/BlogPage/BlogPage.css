@@ -1,0 +1,8 @@
+#cont {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fcf8f7;
+  min-height: 600px;
+}

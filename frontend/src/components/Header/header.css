@@ -1,0 +1,62 @@
+#top-header {
+  overflow: hidden;
+  background-color: #242024;
+  padding: 0px 10px;
+}
+#top-header img {
+  height: 50px;
+  padding: 5px;
+}
+
+/* Style the header links */
+#top-header .nav-link {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px 12px 0px 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.logo {
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+.logo > p {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* Change the background color on mouse-over */
+#top-header .nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+#top-header .active {
+  text-decoration: underline;
+}
+
+/* Float the link section to the right */
+#header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  #top-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #top-header .nav-link {
+    float: none;
+  }
+  #top-header #header-right {
+    margin-bottom: 1%;
+  }
+}

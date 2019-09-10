@@ -1,0 +1,40 @@
+/* Create two unequal columns that floats next to each other */
+.row {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+/* Left column */
+.leftcolumn h1 {
+  font-weight: lighter;
+}
+
+/* Right column */
+.rightcolumn {
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}

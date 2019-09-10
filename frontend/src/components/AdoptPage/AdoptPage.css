@@ -1,0 +1,10 @@
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2em;
+  padding: 20px;
+}
+.adopt-page-container {
+  min-height: 600px;
+  background-color: #fcf8f7;
+}

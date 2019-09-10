@@ -1,0 +1,60 @@
+.tab-link {
+  text-decoration: none;
+}
+.tab-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-tab {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 10px;
+  background-color: white;
+}
+.card-text-container .card-title {
+  color: black;
+}
+/* On mouse-over, add a deeper shadow */
+.menu-tab:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.menu-tab:hover .card-title {
+  text-decoration: underline;
+}
+
+/* Add some padding inside the card container */
+.card-text-container {
+  padding: 2px 16px;
+}
+.card-text-container > p {
+  text-align: center;
+}
+.card-title {
+  font-size: calc(18px + 2vmin);
+}
+.card-description {
+  font-size: calc(10px + 2vmin);
+}
+#card-icon-contact {
+  background-color: #242024;
+  color: white;
+  padding: 8%;
+  border-radius: 100px;
+}
+
+#card-icon-about {
+  background-color: #242024;
+  color: white;
+
+  padding: 8% 14%;
+  border-radius: 100px;
+}
+#card-icon-blog {
+  background-color: #242024;
+  color: white;
+  padding: 8%;
+  border-radius: 100px;
+}
